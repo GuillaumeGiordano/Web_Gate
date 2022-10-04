@@ -1,0 +1,353 @@
+
+/* ______________________________________________________________________________________________ GENERAL*/
+* {
+font-family: ariel;
+}
+
+html,
+body {
+height: 100%;
+margin: 0;
+padding: 0;
+}
+body {
+display: table;
+width: 100%;
+}
+
+footer {
+display: table-row;
+height: 40px;
+}
+.main {
+width: 1000px;
+margin: auto;
+}
+
+h1 {
+color: #2e5296;
+
+}
+h2 {
+color: #2e5296;
+text-align: center;
+margin: 5px;
+}
+h3 {
+color: #2e5296;
+text-align: left;
+}
+/* ______________________________________________________________________________________________ HEADER */
+
+.header{
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+/* ______________________________________________________________________________________________ BOUTON */
+.btn {
+display: flex;
+flex-direction: row;
+padding: 10px 10px;
+}
+.btnSA {
+justify-content: space-around;
+}
+.btnI{
+
+/* background-color: rgb(191, 38, 38); */
+/* border: none; */
+border: 2px solid #2e5296;
+padding: 1px;
+margin: 5px;
+}
+.btnI :hover{
+border: 2px solid #2e5296;
+background-color: #ffffff;
+cursor:default;
+}
+
+.btnL10{
+width: 10px;
+height: 10px;
+border-radius: 10px;
+}
+
+.btnL27{
+width: 27px;
+height: 27px;
+border-radius: 14px;
+}
+
+.btnL50{
+width: 50px;
+height: 50px;
+border-radius: 50px;
+}
+
+.imgBtn {
+background-color: white;
+object-fit: cover;
+/* width: 50px; */
+width: 100%;
+height: 100%;
+border-radius: 25px;
+/* margin: 3px; */
+}
+/* ______________________________________________________________________________________________ FORMULAIRES GENERALS */
+
+.form{
+width: 100%;
+}
+
+.form input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+textarea,
+select {
+padding: 5px;
+border: none;
+border-radius: 5px;
+background-color: #f2f2f2;
+outline: none;
+margin: 2px;
+display: block;
+width: 100%;
+}
+
+.form label {
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+margin: 5px;
+padding: 2px;
+/* background-color: #dc2a2a; */
+display: block;
+width: 100%;
+text-align: left;
+}
+
+.form textarea {
+resize: none;
+}
+
+/* ______________________________________________________________________________________________ Formulaire Général */
+#d0{
+/* display: block; */
+background-color: #fff;
+padding: 10px;
+border-radius: 0.25rem;
+border: 2px solid #2e5296;
+margin: auto;
+}
+
+#d1{
+display: block;
+/* display: none; */
+background-color: #fff;
+padding: 10px;
+border-radius: 0.25rem;
+border: 2px solid #2e5296;
+margin: auto;
+}
+
+.L500{
+width: 500px;
+}
+.L900{
+width: 900px;
+}
+.L1000{
+width: 1000px;
+}
+/* ______________________________________________________________________________________________ Tableau - USER */
+
+#tableau-user table {
+text-align: left;
+line-height: 25px;
+border-collapse: separate;
+border-spacing: 0;
+border: 2px solid #2e5296;
+/* width: 1000px; */
+margin: 10px auto;
+border-radius: 0.25rem;
+overflow:auto;
+}
+
+#tableau-user thead tr:first-child {
+background: #2e5296;
+color: #fff;
+border: none;
+}
+
+#tableau-user th:first-child,
+#tableau-user td:first-child {
+padding: 0 10px 0 10px;
+text-align: center;
+}
+
+#tableau-user th {
+font-weight: 500;
+}
+
+#tableau-user thead tr:last-child th {
+border-bottom: 3px solid #ddd;
+}
+
+#tableau-user tbody tr:hover {
+background-color: #ffffff;
+cursor: default;
+}
+
+#tableau-user tbody tr:last-child td {
+border: none;
+}
+
+#tableau-user tbody td {
+border-bottom: 1px solid #ddd;
+}
+
+#tableau-user tbody td:last-child {
+text-align: right;
+}
+
+#tableau-user .button {
+color: #aaa;
+cursor: pointer;
+vertical-align: middle;
+margin-top: -4px;
+}
+
+tr:nth-child(even) {
+background-color: #d3d3d3d4;
+}
+/* ______________________________________________________________________________________________ PETIT ICONE */
+
+.icon1 {
+background-color: white;
+object-fit: cover;
+width: 20px;
+height: 20px;
+border-radius: 5px;
+}
+.icon2 {
+border: 2px solid #2e5296;
+object-fit: cover;
+width: 56px;
+height: 56px;
+border-radius: 28px;
+margin-right: 10px;
+}
+
+.icon3 {
+object-fit: cover;
+height: 25px;
+}
+
+/* ______________________________________________________________________________________________ MESSAGE ERREUR */
+
+.erreurMessage {
+color: rgb(230, 11, 11);
+}
+
+/* ______________________________________________________________________________________________ RECHERCHE */
+
+.imgRecherche {
+object-fit: cover;
+width: 50px;
+border: 2px solid #2e5296;
+border-radius: 25px;
+margin: 3px;
+
+}
+/* ______________________________________________________________________________________________ MENU ACTION */
+
+.menuH {
+display: flex;
+margin-top: 5px;
+}
+.rowR{
+flex-direction:row-reverse;
+}
+
+.justifyBetween{
+justify-content:space-between;
+}
+
+/* ______________________________________________________________________________________________ DT */
+
+.Conteneur {
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+}
+
+/* ______________________________________________________________________________________________ SWITCH */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 29px;
+    padding: 4px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(142, 255, 136);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+    width: 22px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #2e5296;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(255, 132, 132);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2e5296;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(30px);
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }

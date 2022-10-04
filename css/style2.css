@@ -1,0 +1,330 @@
+/*
+style.css
+--------
+*/
+
+/*-*/
+
+/* A garder pour exemple */
+.cardsAffichage {
+  background-color: cadetblue;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, 900px); */
+  width: 100%;
+  min-width: 900px;
+  grid-gap: 10px;
+}
+/* @media screen and (max-width: 1025px) {
+  * {
+    font-size: 90%;
+    width: 90%;
+  }
+} */
+
+.erreurMessageRouge {
+  border-color: red;
+  color: rgb(180, 27, 27);
+  margin: 10px;
+  text-align: center;
+}
+.erreurMessageVert {
+  border-color: green;
+  color: rgb(29, 126, 29);
+  margin: 10px;
+  text-align: center;
+}
+
+/* Card GENERAL */
+.dtp-card {
+  width: fit-content;
+  margin: auto;
+}
+
+/*  INDEX */
+.main {
+  width: fit-content;
+
+  width: 70%;
+  min-width: 900px;
+  padding: 15px;
+  margin: auto;
+}
+.index {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* CONNEXION */
+.dtp-login-card {
+  width: fit-content;
+  margin: auto;
+}
+.dtp-login-button {
+  width: 100%;
+  margin-top: 10px;
+}
+.dtp-login-opt-button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* INSCRIPTION */
+.dtp-inscription-card {
+  width: fit-content;
+  margin: auto;
+}
+
+/* PROFILE */
+
+/*  CARDS __________________________________________________________________________________ */
+
+.userT {
+  display: flex;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  width: 100%;
+  margin: auto;
+  min-width: 900px;
+  /* min-height: 120px; */
+  padding: 10px;
+  /* margin: 10px; */
+  margin-top: 10px;
+  border: 1px solid black;
+}
+
+.userAlerte {
+  /* background-color: rgb(30, 255, 0); */
+  /* flex-grow: 1; */
+  width: 80px;
+}
+
+.userPhoto {
+  /* background-color: rgb(30, 255, 0); */
+  /* flex-grow: 1; */
+  width: 180px;
+  display: flex;
+}
+.userInfo {
+  /* background-color: blue; */
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  /* flex-grow: 8; */
+}
+.userMenu {
+  /* background-color: brown; */
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-start;
+  /* flex-grow: 1; */
+}
+
+.menuMini {
+  list-style-type: none;
+  margin: auto;
+}
+.menuMini li {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 7px;
+  background-color: #2e5296;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.menuMini a {
+  text-decoration: none;
+  color: white;
+}
+
+/*  FORM: EDITION __________________________________________________________________________________ */
+
+.formEdition {
+  margin-top: 10px;
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 600px;
+}
+.formEdition h1 {
+  color: #2e5296;
+  text-align: center;
+}
+
+.formEdition .inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.formEdition .inputs input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.formEdition .inputs input[type="submit"],
+input[type="button"] {
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #2e5296;
+  outline: none;
+  cursor: pointer;
+}
+
+.formEdition input[id="cadena"] {
+  margin-left: 190px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #b69797;
+  cursor: pointer;
+}
+
+.formEdition p.liens {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #878787;
+}
+.formEdition p.liens span {
+  color: #eb7371;
+}
+
+/* Form: Recherche*/
+
+.formRecherche {
+  /* margin: 10px 10px 10px 10px; */
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 10px;
+  width: 100%;
+  min-width: 900px;
+  border: 1px solid black;
+}
+.formRecherche h1 {
+  color: #2e5296;
+  text-align: center;
+}
+
+.formRecherche .inputs {
+  display: flex;
+  flex-direction: row;
+}
+
+.formRecherche .inputs input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.formRecherche .inputs input[type="submit"],
+input[type="button"] {
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #2e5296;
+  outline: none;
+  cursor: pointer;
+}
+
+.formRecherche input[id="cadena"] {
+  margin-left: 190px;
+  padding: 5px 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #b69797;
+  cursor: pointer;
+}
+
+.formRecherche p.liens {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #878787;
+}
+.formRecherche p.liens span {
+  color: #eb7371;
+}
+
+select {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* img:hover {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+} */
+
+textarea {
+  resize: none;
+}
+textarea:invalid {
+  border: 2px dashed red;
+}
+
+textarea:valid {
+  border: 2px solid lime;
+}
+
+/* ___________________________________________________________________________________________ GENERAL */
+* {
+  font-family: ariel;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: table;
+  width: 100%;
+}
+
+footer {
+  display: table-row;
+  height: 40px;
+}
+
+/* ______________________________________________________________________________________________ INDEX DT */

@@ -1,0 +1,510 @@
+/* ___________________________________________________________________________________________ GENERAL */
+* {
+  font-family: ariel;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: table;
+  width: 100%;
+}
+
+footer {
+  display: table-row;
+  height: 40px;
+}
+
+.main {
+  width: 900px;
+  padding: 5px;
+  margin: auto;
+}
+
+.MenuH {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 10px;
+}
+
+legend {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 5px;
+  /* display: block; */
+}
+
+/* ______________________________________________________________________________________________ Tableau */
+
+/* ______________________________________________________________________________________________ IMAGES */
+
+.icon {
+  display: block;
+  /* height: 40px; */
+  object-fit: cover;
+}
+
+.icon40 {
+  width: 37px;
+}
+
+.iconLong {
+  height: 25px;
+  margin: auto;
+}
+
+.icon28 {
+  /* width: 22px; */
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid #2e5296;
+}
+
+.img1 {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+}
+
+.btnImage {
+  background-color: white;
+  width: 35px;
+  height: 35px;
+}
+
+.btnImage:hover {
+  background-color: #2e5296;
+}
+
+/* ______________________________________________________________________________________________ MESSAGE ERREUR */
+
+.erreurMessage {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border: 2px solid rgb(255, 145, 0);
+  height: 25px;
+  display: block;
+  margin-top: 10px;
+}
+
+/* ______________________________________________________________________________________________ FORMULAIRES GENERALS */
+
+.form {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.form h1 {
+  color: #2e5296;
+  text-align: center;
+}
+.form h2 {
+  color: #2e5296;
+  text-align: center;
+}
+
+.form h3 {
+  color: #2e5296;
+  text-align: left;
+}
+
+.form input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="file"],
+textarea,
+select {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  outline: none;
+  margin-bottom: 5px;
+  display: block;
+}
+.largeurInput30 {
+  width: 30%;
+}
+.largeurInput100 {
+  width: 100%;
+}
+
+label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin-top: 5px;
+  /* display: block; */
+}
+
+textarea {
+  width: 100%;
+  /* height: 100%; */
+  resize: none;
+}
+
+/* ______________________________________________________________________________________________ CARDS GENERALES*/
+.Conteneur {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.Conteneur2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 440px);
+  grid-gap: 10px;
+}
+
+.Cards {
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid black;
+  height: 100%;
+}
+
+.Photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Info {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.MenuMini {
+  list-style-type: none;
+  width: fit-content;
+  margin-left: -30px;
+}
+
+.btnimg {
+  border: 1px solid black;
+  width: fit-content;
+}
+
+.Ouv {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 7px;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #2e5296;
+}
+
+.Supp {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 7px;
+  color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  background-color: #962e2e;
+}
+
+.MenuMini a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ______________________________________________________________________________________________ CARDS DT */
+
+.FormDT {
+  width: 100%;
+}
+
+.FormDTRecherche {
+  display: flex;
+  flex-direction: column;
+}
+
+.FormDT1 {
+  width: 80%;
+  margin: auto;
+}
+
+.CardsDT {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.CardsDT2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.TitreDT {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2px;
+  height: 40px;
+}
+
+.InfoDT {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+
+.MenuDT {
+  padding-left: 5px;
+  width: 5%;
+}
+
+.PhotoDT {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.DetailsDT {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 3px;
+}
+
+.FormeIndexDT {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 8px;
+}
+
+.FormeIndexDTAvis {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.FormeIndexDTAvis1 {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.FormeIndexDTAvis2 {
+  justify-content: space-between;
+}
+
+.labelCard {
+  display: block;
+  /* height: 40px; */
+  /* background-color: blue; */
+  font-size: 0.9em;
+  margin-top: auto;
+  padding-right: 10px;
+}
+
+.select1 {
+  width: 130px;
+  margin-right: 20px;
+}
+.select2 {
+  width: 130px;
+  margin-right: 20px;
+}
+
+.TextareaDT {
+  height: 100%;
+}
+
+.obsDT {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  height: 115px;
+}
+
+.btnDT {
+  margin: auto;
+}
+.btnDT2 {
+  padding-left: 50px;
+}
+
+/* ______________________________________________________________________________________________ CARDS BATS */
+
+.FormBat {
+  width: 70%;
+}
+
+.CardsBat {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.InfoBat {
+  width: 78%;
+}
+
+.MenuBat {
+  width: 22%;
+}
+.btnBat {
+  justify-content: right;
+}
+/* ______________________________________________________________________________________________ CARDS AGREGAT*/
+
+.FormAgregat {
+  width: 70%;
+}
+
+.CardsAgregat {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.InfoAgregat {
+  width: 78%;
+}
+
+.MenuAgregat {
+  width: 22%;
+}
+.btnAgregat {
+  justify-content: right;
+}
+/* ______________________________________________________________________________________________ CARDS Connexion et Inscription */
+
+.FormCNX {
+  border-radius: 20px 40px;
+  width: 60%;
+}
+
+.MenuHCNX {
+  width: 50%;
+}
+.btnCNX {
+  justify-content: center;
+}
+.btnSA {
+  justify-content: space-around;
+}
+
+/* ______________________________________________________________________________________________ CARDS USERS */
+
+.FormUser {
+  width: 70%;
+}
+
+.CardsUser {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.InfoUser {
+  width: 78%;
+}
+
+.MenuUser {
+  width: 22%;
+}
+.btnUser {
+  justify-content: right;
+}
+/* ______________________________________________________________________________________________ Mini MENU DT */
+
+#menu-accordeon {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  width: fit-content;
+}
+#menu-accordeon ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+#menu-accordeon li {
+  /* background-color: #2e5296;
+  background-image: -webkit-linear-gradient(top, #2e5296 0%, #333a40 100%);
+  background-image: linear-gradient(to bottom, #2e5296 0%, #333a40 100%);
+  border-radius: 6px;
+  margin-bottom: 2px; */
+  box-shadow: 3px 3px 3px #2e529685;
+  border: solid 1px #2e5296;
+  border-radius: 20px 20px 20px 0;
+}
+#menu-accordeon li li {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s;
+  border-radius: 0;
+  background: #2e5296;
+  box-shadow: none;
+  border: none;
+  margin: 0;
+}
+
+#menu-accordeon a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 7px;
+  font-size: 1em;
+}
+#menu-accordeon ul li a,
+#menu-accordeon li:hover li a {
+  font-size: 0.8em;
+}
+
+/* #menu-accordeon li:hover {
+  background: #729ebf;
+} */
+
+#menu-accordeon li li:hover {
+  background: #999;
+}
+#menu-accordeon ul li:last-child {
+  border: none;
+  border-radius: 0 0 20px 0;
+}
+#menu-accordeon li:hover li {
+  max-height: 15em;
+}
+/* *********************************************** */
