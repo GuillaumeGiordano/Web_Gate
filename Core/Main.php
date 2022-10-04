@@ -43,8 +43,21 @@ class Main
         }
 
         // var_dump($params);
+
+
         if ($params[0] != '') {
-            // On a au moins 1 paramètre
+            //GUILLAUME G
+            // On vérifie si paramètre EXISTE !
+            $fichier = ROOT . '/Views/'  . $params[0];
+            // var_dump($fichier);
+            // On vérifie si la views existee
+            if (!file_exists($fichier)) {
+                http_response_code(404);
+                echo "La page recherchée n'existe pas, il faut la créer dans controller + views !";
+                die;
+            }
+
+            // On a au moins 1 paramètre BON !
             // On récupère le nom du contrôleur à instancier
             // On met une majuscule en 1ère lettre, on ajoute le namespace complet avant et on ajoute "Controller" après
             $controller = '\\App\\Controllers\\' . ucfirst(array_shift($params)) . 'Controller';
@@ -58,14 +71,18 @@ class Main
             // On récupère le 2ème paramètre d'URL
             $action = (isset($params[0])) ? array_shift($params) : 'index';
 
+            // var_dump($action);
+            // die;
+
             if (method_exists($controller, $action)) {
                 // Si il reste des paramètres on les passe à la méthode
                 (isset($params[0])) ? call_user_func_array([$controller, $action], $params) : $controller->$action();
             } else {
                 http_response_code(404);
-                echo "La page recherchée n'existe pas";
+                echo "La page recherchée n'existe pas, il faut la créer dans views !";
             }
         } else {
+
             // On n'a pas de paramètres
             // On instancie le contrôleur par défaut
             $controller = new MainController;

@@ -21,8 +21,6 @@ class Model extends Db
     }
 
 
-
-
     public function findBy(array $criteres)
     {
         $champs = [];
@@ -44,14 +42,10 @@ class Model extends Db
     }
 
 
-
-
     public function find(int $id)
     {
         return $this->requete("SELECT * FROM {$this->table} WHERE id = $id")->fetch();
     }
-
-
 
 
     public function create()
@@ -80,8 +74,6 @@ class Model extends Db
 
 
 
-
-
     public function update()
     {
         $champs = [];
@@ -106,14 +98,10 @@ class Model extends Db
 
 
 
-
-
     public function delete(int $id)
     {
         return $this->requete("DELETE FROM {$this->table} WHERE id = ?", [$id]);
     }
-
-
 
 
 
@@ -133,8 +121,6 @@ class Model extends Db
             return $this->db->query($sql);
         }
     }
-
-
 
 
     public function hydrate($donnees)

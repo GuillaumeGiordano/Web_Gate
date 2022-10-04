@@ -15,7 +15,7 @@ class UserController extends Controller
         $users = $usersmodel->findAll();
 
         // on génère la vue
-        $this->render('users/index', ['users' => $users]);
+        $this->render('user/index', ['users' => $users]);
     }
 
 
@@ -26,13 +26,14 @@ class UserController extends Controller
      */
     public function lire(int $id)
     {
+
         // On instancie le modéle
-        $usermodel = new UsersModel;
+        $usersmodel = new UsersModel;
 
         // chercher l'utilisateur
-        $user = $usermodel->find($id);
+        $user = $usersmodel->find($id);
 
         // on génère la vue
-        $this->render('users/lire', compact('user'));
+        $this->render('user/lire', compact('user'));
     }
 }

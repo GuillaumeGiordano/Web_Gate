@@ -17,11 +17,11 @@
 									<a class="gn-icon gn-icon-search"><span>Recherche</span></a>
 								</li> -->
 									<li>
-										<a class="gn-icon gn-icon-earth" href="index.php">Accueil</a>
+										<a class="gn-icon gn-icon-earth" href="/">Accueil</a>
 									</li>
 
 									<li>
-										<a class="gn-icon gn-icon-archive" href="agregatindex.php">Les Agrégats</a>
+										<a class="gn-icon gn-icon-archive" href="">Les Utilisateurs</a>
 									</li>
 
 									<!-- <li>
@@ -87,11 +87,11 @@
 							<div class="gn-scroller">
 								<ul class="gn-menu">
 									<li>
-										<a class="gn-icon gn-icon-earth" href="">Accueil</a>
+										<a class="gn-icon gn-icon-earth" href="/">Accueil</a>
 									</li>
 
 									<li>
-										<a class="gn-icon gn-icon-archive" href="agregatindex">Les Agrégats</a>
+										<a class="gn-icon gn-icon-archive" href="user">Les Utilisateurs</a>
 									</li>
 
 									<!-- <li>
@@ -104,7 +104,7 @@
 										<a class="gn-icon gn-icon-cog" href="userindex.php">Utilisateurs</a>
 									</li> -->
 									<li>
-										<a class="gn-icon gn-icon-help" href="aide">Aide</a>
+										<a class="gn-icon gn-icon-help" href="">Aide</a>
 									</li>
 								</ul>
 							</div><!-- /gn-scroller -->
@@ -124,8 +124,8 @@
 		}
 		?>
 
-		<script src="../JS/classie.js"></script>
-		<script src="../JS/gnmenu.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/gnmenu.js"></script>
 		<script>
 			new gnMenu(document.getElementById('gn-menu'));
 		</script>
